@@ -211,3 +211,12 @@ header nav a:hover::after {
     margin-bottom: 1rem;
 }
 
+@media(max-width:768px){
+    .courses-gallery { gap: 1rem; }
+    header nav { flex-direction: column; gap: 0.5rem; }
+}
+
+@media(max-width:480px){
+    .course-card { padding: 1rem; }
+    header nav a, header nav button { padding: 0.4rem 0.8rem; font-size: 0.9rem; }
+}

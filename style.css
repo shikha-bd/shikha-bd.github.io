@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Sacramento&display=swap');
+
+/* ===== Body Styles ===== */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #cfd4cb; /* soft neutral background */
+    color: #3b3b3b;
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    background-color: #ca7c72; /* muted rose */
+    padding: 2.5rem 1rem;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Sacramento', cursive; /* whimsical title */
+    font-size: 3rem;
+    color: #fdfaf6;
+    margin: 0 0 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a, nav button {
+    text-decoration: none;
+    color: #fdfaf6;
+    background-color: #7e97aa;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    border: 2px solid #b9af5f;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+nav a:hover, nav button:hover {
+    background-color: #b9af5f;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ===== Sections ===== */
+section {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    background-color: #fdfaf6;
+    border-radius: 25px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    border: 3px solid #859547;
+}
+
+/* Intricate Frames for Titles */
+section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #7e97aa;
+}
+
+section h2::before,
+section h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #b9af5f;
+    top: 50%;
+}
+
+section h2::before { left: -60px; }
+section h2::after { right: -60px; }
+
+/* ===== Buttons ===== */
+button {
+    background-color: #7e97aa;
+    color: #fdfaf6;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    border: 2px solid #b9af5f;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #b9af5f;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ===== Images ===== */
+img {
+    max-width: 100%;
+    border-radius: 20px;
+    border: 3px solid #ca7c72;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    section {
+        padding: 1.5rem;
+    }
+    nav a, nav button {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    section h2::before, section h2::after {
+        width: 30px;
+    }
+}

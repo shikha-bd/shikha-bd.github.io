@@ -220,3 +220,58 @@ header nav a:hover::after {
     .course-card { padding: 1rem; }
     header nav a, header nav button { padding: 0.4rem 0.8rem; font-size: 0.9rem; }
 }
+/* ===== Responsive for Tablets ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav a, nav button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 1.8rem;
+        margin: 2rem 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ===== Responsive for Phones ===== */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a, nav button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    section {
+        padding: 1.2rem;
+        margin: 1.5rem 0.5rem;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
